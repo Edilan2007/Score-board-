@@ -1,6 +1,5 @@
 let homeScore = document.getElementById("home-score");
-let awayScore = document.getElementById("away-score")
-console.log(homeScore.textContent)
+let awayScore = document.getElementById("away-score");
 
 //  add to Home scoreboard
 function homeOne(){
@@ -8,7 +7,6 @@ function homeOne(){
   let increaseOne = 1
   if(plusOne >= 0){
     let result = plusOne + increaseOne
-    console.log(result) 
     homeScore.textContent =result
   }
 }
@@ -17,7 +15,6 @@ function homeTwo(){
   let increaseTwo = 2
   if (plusTwo >= 0){
    let  result = plusTwo + increaseTwo
-   console.log(result) 
    homeScore.textContent =result
   }
 }
@@ -26,7 +23,6 @@ function homeThree(){
   let increaseThree = 3
   if(plusThree >= 0){
     let result = plusThree + increaseThree
-    console.log(result)
     homeScore.textContent = result
   }
 }
@@ -36,7 +32,6 @@ function awayOne(){
   let increaseOne = 1
   if(plusOne >= 0){
     let result = plusOne + increaseOne
-    console.log(result) 
     awayScore.textContent =result
   }
 }
@@ -44,8 +39,7 @@ function awayTwo(){
   let plusTwo = parseInt(awayScore.textContent)
   let increaseTwo = 2
   if (plusTwo >= 0){
-   let  result = plusTwo + increaseTwo
-   console.log(result) 
+   let  result = plusTwo + increaseTwo 
    awayScore.textContent =result
   }
 }
@@ -54,7 +48,6 @@ function awayThree(){
   let increaseThree = 3
   if(plusThree >= 0){
     let result = plusThree + increaseThree
-    console.log(result)
     awayScore.textContent = result
   }
 }
@@ -63,6 +56,4 @@ function awayThree(){
 function reset(){
   homeScore.textContent = 0
   awayScore.textContent = 0
-  console.log(homeScore)
-  console.log(awayScore)
 }
